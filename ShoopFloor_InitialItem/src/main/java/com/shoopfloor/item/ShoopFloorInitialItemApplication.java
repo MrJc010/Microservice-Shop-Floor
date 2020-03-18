@@ -2,12 +2,14 @@ package com.shoopfloor.item;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-public class ShoopFloorItemApplication {
+@EnableDiscoveryClient
+public class ShoopFloorInitialItemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShoopFloorItemApplication.class, args);
+		SpringApplication.run(ShoopFloorInitialItemApplication.class, args);
 	}
 
 }
